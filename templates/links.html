@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Links</title>
+</head>
+<body>
+    <h1>Your Secure, Self-Destructing Links</h1>
+    <p>These links will expire after 10 minutes or once they are used:</p>
+    <ul>
+        {% for link in links %}
+        <li><a href="{{ link }}" target="_blank">{{ link }}</a></li>
+        {% endfor %}
+    </ul>
+    <p>You can easily copy these links by right-clicking and selecting "Copy link address".</p>
+</body>
+</html>
